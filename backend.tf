@@ -2,10 +2,10 @@
 # For more information, see https://www.terraform.io/docs/backends/types/remote.html
 terraform {
   backend "remote" {
-    organization = "example-org-db1fcf"
+    organization = "capstone-s36"
 
     workspaces {
-      name = "getting-started"
+      name = "gitops"
     }
   }
 
