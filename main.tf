@@ -42,6 +42,7 @@ resource "aws_security_group" "allow_ssh" {
 resource "aws_instance" "backend" {
   ami           = "ami-0bd6906508e74f692"
   instance_type = "t2.micro"
+  count         = 3
 
   tags = {
     Name = "backend"
